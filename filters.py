@@ -4,11 +4,14 @@ import matplotlib.pyplot as plt
 from glob import glob
 
 st.set_page_config(
-    page_title="Filter Visualisation",
+    page_title="AstroBands",
     page_icon="	:rainbow:",
     layout="wide",
     initial_sidebar_state="expanded",    
 )
+
+st.header('AstroBands Filter Visualisation')
+st.text('Produced by @steventgk. Comments+Suggestions welcome on GitHub.')
 
 st.sidebar.header('Plotting Parameters')
 
