@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 from glob import glob
@@ -80,10 +79,10 @@ if len(options)>0:
         ax.plot(fdict[pick][:,0],fdict[pick][:,1],label=pick)
         if filltrue:
             ax.fill_between(fdict[pick][:,0],fdict[pick][:,1],alpha=0.3)
-    ax.legend(fontsize='small',frameon=True)
+    ax.legend(fontsize='x-small',frameon=True)
 
 ax.set_ylim(0.,1.1)
 ax.set_xlabel('wavelength [nm]')
 ax.set_ylabel(r'Transmission [\%]')
 
-st.pyplot(f)
+st.pyplot(f,use_container_width=False)
