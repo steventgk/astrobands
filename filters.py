@@ -83,6 +83,6 @@ if len(options)>0:
 
 ax.set_ylim(0.,1.1)
 ax.set_xlabel('wavelength [nm]')
-ax.set_ylabel(r'Transmission [\%]')
+ax.set_ylabel('Transmission [%]')
 
 st.pyplot(f,use_container_width=False)
