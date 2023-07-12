@@ -71,7 +71,7 @@ options = st.multiselect(
     list(fdict.keys()),
     ['Gaia_G'])
 
-f = plt.figure(figsize=(20,10))
+f = plt.figure(figsize=(18,9))
 ax = f.add_subplot(111)
 
 if len(options)>0:
